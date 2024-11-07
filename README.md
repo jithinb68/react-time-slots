@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+React Time Block Selector
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application built with TypeScript and Tailwind CSS, allowing users to select time slots across different days of the week. Users can configure start time, end time, and intervals for their selections. Blocked time slots are displayed and cannot be selected.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+	•	Time Interval Selection: Choose the interval for time slots (e.g., 1 hour).
+	•	Configurable Start and End Time: Set the start and end times for each day.
+	•	Day Selection: Select days of the week to apply the time slot settings.
+	•	Blocked Hours: Certain hours are blocked and cannot be selected, marked in red.
+	•	Responsive UI: Built with Tailwind CSS for a responsive and visually consistent design.
 
-### `npm start`
+Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+	•	React: Frontend framework for building user interfaces.
+	•	TypeScript: Adds static typing to JavaScript, improving code quality and maintainability.
+	•	Tailwind CSS: Utility-first CSS framework for styling.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Setup
 
-### `npm test`
+	1.	Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/yourusername/react-time-block-selector.git
+cd react-time-block-selector
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	2.	Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+	3.	Run the application:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+	4.	Open http://localhost:3000 in your browser to view the application.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Folder Structure
 
-## Learn More
+	•	src/components: Contains reusable components such as TimeBlock, DaySelector, and TimeSettings.
+	•	src/pages: Main pages of the application.
+	•	src/styles: Custom styles using Tailwind.
+	•	src/utils: Utility functions for time calculations and validations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	1.	TimeBlock: Displays selectable and blocked time slots based on the selected interval.
+	2.	DaySelector: Allows users to select days of the week to apply the time slot settings.
+	3.	TimeSettings: Dropdowns to set start time, end time, and interval for time blocks.
+
+Usage
+
+	1.	Select Interval: Use the dropdown to choose the time interval (e.g., 1 hour).
+	2.	Set Start and End Times: Choose start and end times to define the range of selectable time slots.
+	3.	Choose Days: Select the days of the week to apply the settings.
+	4.	View Blocked Hours: Blocked hours are indicated in red and cannot be selected.
+
+Customization
+
+You can customize blocked hours or time intervals by modifying the logic in TimeBlock component and related utility functions in src/utils.
+
+Future Improvements
+
+	•	Persistent Storage: Save user selections in local storage.
+	•	Dynamic Blocked Hours: Allow users to define custom blocked hours.
+	•	Timezone Support: Add timezone selection to make it adaptable for different locations.
+
+License
+
+This project is licensed under the MIT License.

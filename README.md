@@ -1,6 +1,6 @@
 React Time Block Selector
 
-https://ibb.co/BqpwT8S
+<img src="https://ibb.co/BqpwT8S" width="500">
 
 This is a React application built with TypeScript and Tailwind CSS, allowing users to select time slots across different days of the week. Users can configure start time, end time, and intervals for their selections. Blocked time slots are displayed and cannot be selected.
 
